@@ -20,7 +20,7 @@ void draw() {
     println("El perímetro del rectángulo es: " + perimetro);
     text("El perímetro del rectángulo es: " + perimetro, width/4-120, height/2 - 60);
     println("El área del rectángulo es: " + area);
-    text("El área del rectángulo: "+ area , width/4-120, height/2 - 80);
+    text("El área del rectángulo: "+ area , width/4-120, height - 200);
     noLoop();
   }
 }
