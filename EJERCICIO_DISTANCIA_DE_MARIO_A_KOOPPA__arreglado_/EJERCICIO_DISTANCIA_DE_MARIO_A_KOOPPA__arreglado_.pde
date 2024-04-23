@@ -16,8 +16,8 @@ distanciaMaK = (posKooppa - posMario) ;
 }
 public void verLaDistanciDeMaK(){
 println("La distancia entre Mario y Kooppa es = " );
-println("La distancia entre Mario y Kooppa es = "+distanciaMaK);
-text("La distancia entre Mario y Kooppa es = "+distanciaMaK,width/8,height/5+60); //,100,500);
+println("La distancia entre Mario y Kooppa es = "+ distanciaMaK );
+text("La distancia entre Mario y Kooppa es = "+ distanciaMaK,width/8,height/5+60); //,100,500);
 }
 public void marioSalta()
 {
