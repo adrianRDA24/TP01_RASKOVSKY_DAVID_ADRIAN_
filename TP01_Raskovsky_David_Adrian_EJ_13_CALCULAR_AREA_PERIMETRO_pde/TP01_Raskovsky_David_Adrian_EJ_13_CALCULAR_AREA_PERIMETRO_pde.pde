@@ -13,12 +13,12 @@ void setup() {
 
 void draw() {
   if (inputIndex == 2) {
-    float base = float(inputs[0]);
-    float altura = float(inputs[1]);
+    float base = int(inputs[0]);
+    float altura = int(inputs[1]);
     float perimetro = (base + altura)*2;
     float area = base * altura;
     println("El perímetro del rectángulo es: " + perimetro);
-    text("El perímetro del rectángulo es: " + perimetro, width/4-120, height/2 - 60);
+    text("El perímetro del rectángulo es: " + perimetro, width/4-120, height/2 +20);
     println("El área del rectángulo es: " + area);
     text("El área del rectángulo: "+ area , width/4-120, height - 200);
     noLoop();
@@ -31,6 +31,7 @@ void keyPressed() {
   } else {
     inputs[inputIndex] = currentInput;
     inputIndex++;
+   
     if (inputIndex == 1) {
       println("Ingrese la altura del rectángulo: ");
       text("El Ingrese la altura del rectángulo: " , width/4-120, height/2 - 80);
