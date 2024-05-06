@@ -2,13 +2,15 @@
 String[] inputs = new String[2];
 int inputIndex = 0;
 String currentInput = "";
-
+ 
 void setup() {
+  println("TP 01 - EJERSICIO 13");
   size(600, 400);
   background(0);     // Color de fondo
   textSize(25);
   println("Ingrese la base del rectángulo y presione<ENER> : ");
-  text("Ingrese la base del rectángulo y presione<ENER>",width/4-150,  height/2 -150);
+  text("TP 01-Ej.13-CALCULA AREA Y PERIMETRO DEL RECT.",15,30);
+  text("Ingrese la base del rectángulo y presione<ENER>",width/4-150,  height/2 -120);
 }
 void draw() {
   if (inputIndex == 2) {
@@ -25,15 +27,15 @@ void draw() {
   }
 }
 void keyPressed() {
-  if (key != '\n') {
-    currentInput += key;
+  if (key != '\n') { // SO NO ES FINDECARRO SALE PPOR EL ELSE
+    currentInput += key; // CARGA LA TECLA FIN DE CARRO CARGA LA VARIABLE CON EL VALOR DEL A TECLA 
   } else {
-    inputs[inputIndex] = currentInput;
-    inputIndex++; 
-    if (inputIndex == 1) {
+    inputs[inputIndex] = currentInput; // CARGA EL VECTOR CON LA CADENA APARETADA
+    inputIndex++;  // IMCREMEMTA VARIABLE DEL INDICE SI ES 1 ES LA PRIMERA ENTRADA
+    if (inputIndex == 1) { //SI EL INCIE DEL VECTOR ES 1 SALE 
       println("Ingrese la altura del rectángulo y presione<ENER> ");
       text("Ingrese la altura del rectánguloy presione<ENER> ", width/4-150, height/2 -80);
     }
-    currentInput = "";
+    currentInput = "";  // ACLARA LA VAR DEL IMDICE
   }
 }
