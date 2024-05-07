@@ -1,4 +1,3 @@
-
 String[] inputs = new String[2];
 int inputIndex = 0;
 String currentInput = "";
