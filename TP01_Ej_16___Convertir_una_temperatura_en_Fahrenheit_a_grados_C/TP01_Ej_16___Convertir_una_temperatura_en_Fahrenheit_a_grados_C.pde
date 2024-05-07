@@ -12,4 +12,5 @@ float temperaturaEnCelcius= 120;
 float resultado = temperaturaEnCelcius - 32;
 resultado = resultado / 1.8;
 text("120°F es = " + resultado +"°C",20,65);
+println("120°F es = "+ resultado +"°C" );
 };
